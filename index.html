@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timed quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="typewriter">This week Schrodinger's equation</h1>
+      <button id="mode-toggle" aria-label="Toggle dark/light mode">🌙</button>
+    </header>
+    <main id="main-content">
+      <button id="start-btn" class="typewriter">Revise Last Class</button>
+      <div id="name-modal" class="modal">
+        <div class="modal-content">
+          <h2>Enter your name</h2>
+          <input type="text" id="username" placeholder="Your name" maxlength="32" />
+          <button id="name-submit">Start Quiz</button>
+        </div>
+      </div>
+      <div id="quiz" class="hidden">
+        <div id="timer" class="typewriter"></div>
+        <div id="question-img-container">
+          <img id="question-img" alt="Question" />
+        </div>
+        <div id="options">
+          <button class="option-btn" data-option="a">A</button>
+          <button class="option-btn" data-option="b">B</button>
+          <button class="option-btn" data-option="c">C</button>
+          <button class="option-btn" data-option="d">D</button>
+        </div>
+      </div>
+      <div id="result" class="hidden typewriter"></div>
+      <div id="leaderboard" class="hidden"></div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
